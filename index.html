@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder List | Arsl Thaheem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="wraper">
+        <div class="box">
+            <h1>New Reminder List</h1>
+            <label for="text-box">Type Your Details:</label> <br>
+            <div id="input">
+                <input type="text" name="name" id="text-box" placeholder="Type Your Details" onkeyup="enterpress()"
+                    autocomplete="off">
+                <input type="button" value="OK" id="ok-but" onclick="return additin()">
+            </div>
+
+            <ul id="my-list"></ul>
+            <div class="footer">
+                <button onclick="clearData()" id="clear">Clear</button>
+            </div>
+        </div>
+        <footer>
+            <p>Copy Right @2021 | <a href="https://www.facebook.com/ThaheemSahab786" target="_blank">Arsl Thaheem</a> | <a href="tel:+923445982251">Contact</a> </p>
+        </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
